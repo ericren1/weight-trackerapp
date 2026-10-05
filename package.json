@@ -1,0 +1,34 @@
+{
+  "name": "weight-analytics",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "npm run build && vite preview",
+    "deploy": "npm run build && wrangler deploy",
+    "cf-types": "wrangler types",
+    "db:local": "wrangler d1 execute weight-tracker-db --local --file=./schema.sql",
+    "db:remote": "wrangler d1 execute weight-tracker-db --remote --file=./schema.sql"
+  },
+  "dependencies": {
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "recharts": "latest"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "latest",
+    "@cloudflare/workers-types": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "wrangler": "latest",
+    "@vitejs/plugin-react": "latest"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "tracker",
+  "compatibility_date": "2026-10-05",
+  "main": "./worker/index.ts",
+  "assets": {
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "weight-tracker-db",
+      "database_id": "a7aa86bf-a8b0-4d44-9aac-346d8539e700"
+    }
+  ],
+  "secrets": {
+    "required": ["ADMIN_PASSWORD", "SESSION_SECRET"]
+  }
+}
