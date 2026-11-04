@@ -1,8 +1,8 @@
 # WEIGHT. — Personal Weight Analytics
 
-A public-read, owner-write bodyweight analytics app built with React, Cloudflare Workers, and Cloudflare D1.
+ bodyweight analytics app built with React, Cloudflare Workers, and Cloudflare D1.
 
-The UI uses the supplied **deep navy / teal / electric aqua / coral** palette. Dark mode is the default; light mode keeps the same accent colors.
+Live Site: https://tracker.ericrenweight.workers.dev/
 
 ## Included historical data
 
